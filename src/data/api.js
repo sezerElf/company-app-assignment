@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://192.168.1.42:8000/";
+const BASE_URL = "https://company-service-assignment.herokuapp.com/";
 
 export function register(name, email, password) {
   return axios.post(BASE_URL + "user/register", { name, email, password });
