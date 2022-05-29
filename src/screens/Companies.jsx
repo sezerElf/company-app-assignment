@@ -74,7 +74,9 @@ export default function Companies() {
                   <td>{data.legalNumber}</td>
                   <td>{data.country}</td>
                   <td>{data.webSite}</td>
-                  <td><Button>Details</Button></td>
+                  <td> <Card.Link href={"/products?cid=" + data._id}>
+                        Details
+                      </Card.Link></td>
                   <td>
                     <UpdateCompanyModal
                       show={updateCompanyModalShow}
